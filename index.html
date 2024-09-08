@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Who's That Pokémon</title>
+</head>
+<body>
+    
+    <div id='game'>
+        <div id='generations-container'>
+            <div id='generations-header'>
+                <h2>Generations</h2>
+            </div>
+            <div id='generations'>
+                <button id="gen-1" class="btn">Gen I</button>
+                <button id="gen-2" class="btn">Gen II</button>
+                <button id="gen-3" class="btn">Gen III</button>
+                <button id="gen-4" class="btn">Gen IV</button>
+                <button id="gen-5" class="btn">Gen V</button>
+                <button id="gen-6" class="btn">Gen VI</button>
+                <button id="gen-7" class="btn">Gen VII</button>
+                <button id="gen-8" class="btn">Gen VIII</button>
+                <button id="gen-9" class="btn">Gen IX</button>
+            </div>
+        </div>
+        
+        <div id='game-container'>
+            <div id='header'>
+                <h1>Who's That Pokémon</h1>
+            </div>
+            <img id='pkm-img'
+                img = 'https://pokeapi.co/api/v2/pokemon/ditto' 
+                alt='pokemon'>
+            <div id='container'>
+                <input id='guess-input' type="text">
+                
+                <button id="give-up-btn">Give Up</button>
+            
+            </div>
+        </div>
+
+        <div id = 'score-container'>
+            <div id  = 'countdown' class="scoreboard">Click Start Game</div>
+            <div id='score' class="scoreboard">Score: 0</div>
+            <div id = 'streak' class="scoreboard">Streak: 0</div>
+            <div id = 'max-streak' class="scoreboard">Max Streak: 0</div>
+            <div id = 'guess-time' class="scoreboard">Guess Time: </div>
+            <div id = 'streak' class="scoreboard">Fastest Guess: </div>
+        </div>
+
+        <button id = "start-game" class = "start-stop">Start Game</button>
+            
+         <button id = "reset-game"class = "start/stop">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

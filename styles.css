@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between generations-container and game-container */
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pkm-img {
+    padding: 20px;
+    filter: brightness(0) contrast(0) sepia(1) brightness(1.5) hue-rotate(180deg);
+    width: 300px; /* Increase the width of the Pokémon image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#pkm-img.show {
+    filter: none; /* Remove all filters */
+}
+
+#feedback {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: flex-end; /* Align buttons to the bottom */
+    align-items: center; /* Center buttons horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+.btn {
+    padding: 10px 20px; /* Uniform padding for buttons */
+    font-size: 16px; /* Consistent font size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    width: 150px; /* Fixed width for buttons */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.btn:active {
+    transform: scale(0.98); /* Slight scale down effect on click */
+}
+
+#generations-container {
+    border: 2px solid white; /* Outer border */
+    border-radius: 10px; /* Rounded corners for the border */
+    padding: 20px; /* Padding inside the border */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between header and buttons */
+    margin-right: 20px; /* Space between generations-container and game-container */
+    width: 200px; /* Thinner width for generations container */
+    position: relative; /* For positioning of the button */
+}
+
+#generations-header h2 {
+    margin: 0; /* Remove default margin */
+    color: white; /* Header text color */
+}
+
+#generations {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+#score {
+    margin-top: 20px; /* Space between score and generations container */
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+#guess-input {
+    margin-bottom: 10px; /* Space between input field and "Give Up" button */
+    border-radius:5px;
+    width: 250px;
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight:bold;
+}
+
+#guess-input.correct {
+    margin-bottom: 10px; /* Space between input field and "Give Up" button */
+    border-radius:5px;
+    width: 250px;
+    height: 50px;
+    font-size: 2rem;
+    background-color:rgb(51, 214, 70);
+    color: white;
+    font-weight: bold;
+}
+
+#guess-input.give-up {
+    margin-bottom: 10px; /* Space between input field and "Give Up" button */
+    border-radius:5px;
+    width: 250px;
+    height: 50px;
+    font-size: 2rem;
+    background-color:rgb(72, 182, 189);
+    color: white;
+    font-weight: bold;
+}
+
+
+#give-up-btn {
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    width: 200px; /* Fixed width for button */
+    margin-top: 5px; /* Space between input field and "Give Up" button */
+    font-size: 1.4rem;
+   
+}
+
+#give-up-btn:hover {
+    text-decoration: underline;
+}
+
+#give-up-btn:active {
+    transform: scale(0.98); /* Slight scale down effect on click */
+}
+
+#generations button.selected {
+    background-color: rgb(80, 223, 233); /* Darker color when selected */
+}
+
+#score-container {
+    border: 2px solid white; /* Outer border */
+    border-radius: 10px; /* Rounded corners for the border */
+    padding: 20px; /* Padding inside the border */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between header and buttons */
+    margin-right: 20px; /* Space between generations-container and game-container */
+    width: 200px; /* Thinner width for generations container */
+    position: relative; /* For positioning of the button */
+    color: white;
+}
+
+.start-stop {
+   
+
+}
